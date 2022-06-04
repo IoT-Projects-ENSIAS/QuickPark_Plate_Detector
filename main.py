@@ -1,6 +1,6 @@
 from plate_detector import PlateDetector
 from plate_ocr import PlateOCR
-import cv2, uuid
+import cv2
 import numpy
 import flask
 from flask import request, send_file

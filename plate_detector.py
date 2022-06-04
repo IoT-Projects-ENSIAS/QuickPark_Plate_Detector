@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Dec 26 02:27:36 2021
-@author: Safoine EL KHABICH "TTM" <https://www.linkedin.com/in/safoinme/>
-"""
-
 import detectron2
 from detectron2.engine import DefaultTrainer
 from detectron2.config import get_cfg
@@ -60,8 +53,7 @@ class PlateDetector:
     def detectedPlateSaver(self, image, output):
         visual = Visualizer(image[:, :, ::-1],
                    metadata=self._class, 
-                   scale=0.5, 
-                   
+                   scale=0.5,    
         )
         visual_output = visual.draw_instance_predictions(output["instances"])
         output_image = os.path.join("./images/plate_detector", str(uuid.uuid4())+".jpg")

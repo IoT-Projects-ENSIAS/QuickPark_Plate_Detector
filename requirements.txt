@@ -4,3 +4,4 @@ fastapi
 python-multipart
 pycocotools
 orjson==3.6.5
+flask
