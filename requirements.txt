@@ -1,0 +1,6 @@
+opencv-contrib-python==4.5.5.64
+opencv-python==4.5.5.64
+fastapi
+python-multipart
+pycocotools
+orjson==3.6.5
